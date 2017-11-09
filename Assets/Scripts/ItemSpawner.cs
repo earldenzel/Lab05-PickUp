@@ -18,7 +18,7 @@ public class ItemSpawner : MonoBehaviour {
         {
             do
             {
-                unitPosition = new Vector3(Random.Range(-9, 140), Random.Range(-13, 13));
+                unitPosition = new Vector3(Random.Range(0, 131), Random.Range(-13, 13));
             }
             while (Physics2D.OverlapCircle(unitPosition, 1.0f) != null);
 

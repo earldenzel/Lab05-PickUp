@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour {
             myTime -= Time.deltaTime;
             rBody.velocity = speed * new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
             this.transform.position = new Vector2(
-                Mathf.Clamp(this.transform.position.x, -9, 140),
+                Mathf.Clamp(this.transform.position.x, 0, 131),
                 Mathf.Clamp(this.transform.position.y, -14, 14));
         }
 
